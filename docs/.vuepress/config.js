@@ -1,6 +1,6 @@
 // notes/docs/.vuepress/config.js
 module.exports = {
-    base:"/Blog/",
+    base:"/",
     title:'慧图资环科技',
     description:'软件开发部',
     head:[
@@ -14,9 +14,9 @@ module.exports = {
           { text: 'Home', link: '/' },
           { text: 'Technology stack', 
             items: [
-               {text:'使用说明', link: '/about'},
-               {text:'Java', link: '/Java'},
-               {text:'JavaScript', link: '/JavaScript'}
+               {text:'使用说明', link: '/file/about'},
+               {text:'Java', link: '/file/Java'},
+               {text:'JavaScript', link: '/file/JavaScript'}
               ]
           },
           { text: 'External', link: 'https://www.huitukj.com/' },

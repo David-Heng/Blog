@@ -81,9 +81,9 @@ text为标题，link中为markdown文档所在路径或要打开指定网页的�
 
 添加新的导航栏链接和所对应的markdown文件时，添加新的记录在nav：[text：‘导航栏名称’，link：‘markdown文件路径’]。
 
-#### 2.新增导航栏下拉列表
+#### 2.新增Markdown文档
 
-当不需要添加新的导航栏链接，仅在现有主题导航栏下添加新的markdown文件时，在config.js完成配置：
+当不需要添加新的导航栏链接，仅在现有主题导航栏下添加新的markdown文件时，在config.js中完成配置：
 
 ```js
 module.exports = {
@@ -92,8 +92,8 @@ module.exports = {
       {
         text: 'Languages',
         items: [
-          { text: 'Java', link: '/Java/' },
-          { text: 'JavaScript', link: '/JavaScript/' }
+          { text: 'Java', link: '/file/Java' },
+          { text: 'JavaScript', link: '/file/JavaScript' }
         ]
       }
     ]
@@ -101,4 +101,4 @@ module.exports = {
 }
 ```
 
-添加新的markdown文件时，只需在选定主题中的items中增添新的{ text: '×××', link: '/×××/' }即可。
+添加新的markdown文件时，只需在选定主题中的items中增添新的{ text: '文档名称', link: '/文档路径/' }即可。（默认把文档统一放在file文件夹里）
